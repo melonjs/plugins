@@ -1,0 +1,4 @@
+Copy here all required libraries :
+- melonJs
+- MelonJs plugin
+- sink
