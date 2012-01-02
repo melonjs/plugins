@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<script src="lib/melonJS-0.9.2-min.js"></script>
+<script src="lib/sink.js"></script>
+<script src="lib/hal.js"></script>
+<script src="lib/ym.js"></script>
+<SCRIPT>
+var player = new me.YmPlayer();
+
+</SCRIPT>
+</HEAD>
+<BODY>
+Sound Test !
+<P>
+<FORM>
+<INPUT type="Button" Value="Load 1" OnClick="player.fetchFile('test1.ym');">
+<INPUT type="Button" Value="Load 2" OnClick="player.fetchFile('test2.ym');">
+<INPUT type="Button" Value="Play" OnClick="player.play();">
+<INPUT type="Button" Value="Pause" OnClick="player.pause();">
+<INPUT type="Button" Value="Stop" OnClick="player.stop();">
+
+
+</FORM>
+</BODY>
+</HTML>
