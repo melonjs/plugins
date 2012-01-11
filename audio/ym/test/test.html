@@ -1,10 +1,11 @@
 <HTML>
 <HEAD>
-<script src="lib/melonJS-0.9.2-min.js"></script>
-<script src="lib/sink.js"></script>
-<script src="lib/hal.js"></script>
-<script src="lib/ym.js"></script>
+<script src="lib/melonJS-0.9.3.js"></script>
+<script src="../../sink.js"></script>
+<script src="../../hal.js"></script>
+<script src="../ym.js"></script>
 <SCRIPT>
+
 var player = new me.YmPlayer();
 
 </SCRIPT>
@@ -13,9 +14,10 @@ var player = new me.YmPlayer();
 Sound Test !
 <P>
 <FORM>
-<INPUT type="Button" Value="Load 1" OnClick="player.fetchFile('test1.ym');">
-<INPUT type="Button" Value="Load 2" OnClick="player.fetchFile('test2.ym');">
-<INPUT type="Button" Value="Play" OnClick="player.play();">
+<INPUT type="Button" Value="Load 1" OnClick="me.loader.load({name: 'test1',  type:'binary',  src: 'test1.ym'},alert('test1.ym loaded!'));">
+<INPUT type="Button" Value="Load 2" OnClick="me.loader.load({name: 'test2',  type:'binary',  src: 'test2.ym'},alert('test2.ym loaded!'));">
+<INPUT type="Button" Value="Play 1" OnClick="player.load(me.loader.getBinary('test1'));player.play();">
+<INPUT type="Button" Value="Play 2" OnClick="player.load(me.loader.getBinary('test2'));player.play();">
 <INPUT type="Button" Value="Pause" OnClick="player.pause();">
 <INPUT type="Button" Value="Stop" OnClick="player.stop();">
 
