@@ -1,0 +1,1 @@
+obsolete plugins not using the official plugin interface/mechanism
